@@ -1,0 +1,26 @@
+<form action="" (submit)='editBadger()'>
+  <table>
+    <tr>   
+      <td>Name:</td>  
+      <td><input type="text" name="showBadger.name" [(ngModel)]='showBadger.name'></td>
+    </tr>
+    <tr>
+        <td>Color:</td>  
+        <td><input type="text" name="showBadger.color" [(ngModel)]='showBadger.color'></td>
+    </tr>
+    <tr>
+      <td><button type="submit">Edit Badger</button></td><br>   
+    </tr> 
+  </table>
+</form>
+<tr>
+    <span style="color:red; font-size: 20px;">{{errorName}}</span>
+</tr>
+<tr>
+    <span style="color:red; font-size: 20px;">{{errorColor}}</span>
+</tr>
+
+
+
+
+<button (click)='deleteBadger(showBadger._id)' type="submit">Delete Badger</button>

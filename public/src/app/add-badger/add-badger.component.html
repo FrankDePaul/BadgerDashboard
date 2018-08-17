@@ -1,0 +1,25 @@
+
+
+
+<form action="" (submit)='addBadger()'>
+  <table>
+    <tr>   
+      <td>Name:</td>  
+      <td><input type="text" name="createBadger.name" [(ngModel)]='createBadger.name'></td>
+    </tr>
+    <tr>
+        <td>Color:</td>  
+        <td><input type="text" name="createBadger.color" [(ngModel)]='createBadger.color'></td>
+    </tr>
+    <tr>
+      <td><button type="submit">Add Badger</button></td><br>   
+    </tr>   
+  </table>
+</form>
+<tr>
+    <span style="color:red; font-size: 20px;">{{errorName}}</span>
+</tr>
+<tr>
+    <span style="color:red; font-size: 20px;">{{errorColor}}</span>
+</tr>
+{{ createBadger| json }}

@@ -1,0 +1,16 @@
+<div  *ngIf="badgers">
+    <h1>All Badgers</h1>
+    <div *ngFor='let badger of badgers'>
+      <h6>Name: <span>{{ badger.name }}</span></h6>
+      <h6>Color: <span>{{ badger.color }}</span></h6>
+     
+      <button class="btn btn-success btn-sm"[routerLink]="['one', badger._id]">Show</button>
+ 
+
+      <hr>
+    </div>
+    <router-outlet></router-outlet>
+  </div> 
+
+
+  
